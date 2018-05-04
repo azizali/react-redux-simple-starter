@@ -1,10 +1,11 @@
 {
   "name": "React-Redux-Simple-Starter",
   "version": "1.0.0",
-  "description": "React Redux Simple Starter with Webpack, Hot module loading",
+  "description": "React Redux Simple Starter with Parcel",
   "main": "src/index.js",
   "scripts": {
-    "start": "webpack-dev-server",
+    "start": "./node_modules/parcel/bin/cli.js ./src/index.html",
+    "start-webpack": "webpack-dev-server",
     "build": "webpack"
   },
   "keywords": [
@@ -27,10 +28,10 @@
     "babel-core": "^6.23.1",
     "babel-loader": "^6.4.0",
     "babel-plugin-transform-react-jsx": "^6.23.0",
-    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.23.0",
-    "babel-preset-stage-0": "^6.22.0",
     "html-webpack-plugin": "^2.28.0",
+    "parcel-bundler": "^1.8.1",
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.4.1"
   }
